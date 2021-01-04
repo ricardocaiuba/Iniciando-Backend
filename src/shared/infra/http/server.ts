@@ -13,7 +13,7 @@ import "@shared/container";
 
 const app = express();
 app.use(express.json());
-app.use("/files", express.static(uploadConfig.tmpFolter));
+app.use("/files", express.static(uploadConfig.uploadsFolder));
 app.use(cors());
 app.use(routes);
 
